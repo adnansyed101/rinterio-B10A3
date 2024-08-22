@@ -34,6 +34,7 @@
       }
 
       .center {
+        display: flex;
         align-items: center;
         justify-content: center;
       }
@@ -57,13 +58,13 @@
       <!-- Navbar -->
       <nav class="flex justify-between mt-3">
         <!-- Navbar header -->
-        <a class="flex center gap-1">
+        <a class="center gap-1">
           <span class="rounded-full bg-primary w-8 h-8 flex center">
             <i class="fa-solid fa-arrow-right -rotate-45"></i>
           </span>
           <span class="text-3xl font-bold">Rinterio</span>
         </a>
-        <ul class="hidden lg:flex center lg:gap-4">
+        <ul class="hidden lg:flex items-center lg:gap-4">
           <li class="text-[#494949] font-bold">Home</li>
           <li class="text-[#737373]">Services</li>
           <li class="text-[#737373]">Portfolio</li>
@@ -81,9 +82,7 @@
             </button>
             <button class="btn bg-primary text-black rounded-3xl">
               <span class="font-bold">Book Consult</span>
-              <span
-                class="rounded-full bg-black text-white w-8 h-8 flex center"
-              >
+              <span class="rounded-full bg-black text-white w-8 h-8 center">
                 <i class="fa-solid fa-arrow-right -rotate-45"></i>
               </span>
             </button>
@@ -139,7 +138,7 @@
               class="btn bg-[rgba(171,239,95,.5)] text-black rounded-3xl w-full md:w-auto"
             >
               <span class="font-bold">View Details</span>
-              <span class="rounded-full bg-primary w-8 h-8 flex center">
+              <span class="rounded-full bg-primary w-8 h-8 center">
                 <i class="fa-solid fa-arrow-right -rotate-45"></i>
               </span>
             </button>
@@ -150,7 +149,7 @@
     <!-- Main -->
     <main class="bg-base-200 mb-24">
       <!-- About us -->
-      <section class="hero container mx-auto px-5 py-5 lg:py-20">
+      <section class="hero container mx-auto px-5 py-5 lg:py-20 mb-24">
         <div
           class="hero-content flex-col lg:flex-row lg:gap-10 items-center justify-center"
         >
@@ -209,6 +208,78 @@
             src="assets/Rectangle.png"
             class="rounded-lg lg:max-w-md xl:max-w-xl"
           />
+        </div>
+      </section>
+      <!-- Work Progress -->
+      <section class="container mx-auto px-5 py-5 lg:py-20 mb-24">
+        <!-- Header Text-->
+        <div class="text-center mb-2 center flex-col gap-2">
+          <button class="btn bg-white rounded-3xl">
+            <i class="fa-solid fa-arrow-right"></i>
+            How we work
+          </button>
+          <h1 class="text-2xl lg:text-5xl font-bold">
+            We design thoughtful, liveable spaces
+          </h1>
+          <p class="py-6 text-sm lg:text-base md:w-1/2">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Card 1 -->
+          <div class="card bg-[#E7C1D3]">
+            <div class="card-body">
+              <div>
+                <img src="assets/concept.png" alt="Light Bulb" />
+              </div>
+              <h2 class="card-title">Concept</h2>
+              <p class="text-[#494949]">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card bg-[#EFDA6E]">
+            <div class="card-body">
+              <div>
+                <img src="assets/flow-chart.png" alt="Flow Chart" />
+              </div>
+              <h2 class="card-title">Design Process</h2>
+              <p class="text-[#494949]">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card bg-[#A4DAC3]">
+            <div class="card-body">
+              <div>
+                <img src="assets/vision.png" alt="Eyes" />
+              </div>
+              <h2 class="card-title">Supervision</h2>
+              <p class="text-[#494949]">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card bg-[#77AAEA]">
+            <div class="card-body">
+              <div>
+                <img src="assets/budget-planning.png" alt="Light Bulb" />
+              </div>
+              <h2 class="card-title">Budget Planning</h2>
+              <p class="text-[#494949]">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
