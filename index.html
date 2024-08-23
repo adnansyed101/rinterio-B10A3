@@ -147,12 +147,10 @@
       </section>
     </header>
     <!-- Main -->
-    <main class="bg-base-200 mb-24">
+    <main class="bg-base-200">
       <!-- About us -->
       <section class="container mx-auto px-5 py-5 lg:py-20 mb-24">
-        <div
-          class="flex flex-col lg:flex-row gap-10 "
-        >
+        <div class="flex flex-col lg:flex-row gap-10">
           <!-- text Content -->
           <div>
             <div class="text-center mb-2 lg:text-left relative">
@@ -368,6 +366,66 @@
               <img src="assets/img3.png" class="rounded-3xl w-full h-full" />
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Connect -->
+      <section
+        class="bg-opacity-50 bg-no-repeat bg-center bg-cover"
+        style="background-image: url('assets/bg.jpg')"
+      >
+        <div class="container mx-auto px-5 py-5 lg:py-20 md:px-24">
+          <!-- Header Text -->
+          <div class="text-center mb-2 center flex-col gap-2">
+            <button
+              class="btn bg-[rgba(171,239,95,.3)] rounded-3xl text-[#494949] border-none"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+              Let's Connect
+            </button>
+            <h1 class="text-2xl lg:text-5xl font-extrabold">
+              Let's Discuss Next Project
+            </h1>
+            <p class="py-6 text-sm lg:text-base md:w-1/2">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- Form -->
+          <form class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="p-4 rounded-3xl"
+            />
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="p-4 rounded-3xl"
+            />
+            <input
+              type="number"
+              placeholder="Phone Number*"
+              class="p-4 rounded-3xl"
+            />
+            <input
+              type="email"
+              placeholder="Email Address*"
+              class="p-4 rounded-3xl"
+            />
+
+            <textarea
+              class="md:col-span-2 p-4 rounded-3xl"
+              placeholder="Write Your Message Here"
+              rows="10"
+            ></textarea>
+            <button class="btn bg-primary text-black rounded-3xl md:col-span-2">
+              <span class="font-bold">Send Mail</span>
+              <span class="rounded-full bg-black text-white w-8 h-8 center">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+              </span>
+            </button>
+          </form>
         </div>
       </section>
     </main>
